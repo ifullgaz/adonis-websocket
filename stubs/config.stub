@@ -1,0 +1,13 @@
+{{{
+  exports({ to: app.configPath('websocket.ts') })
+}}}
+import env from '#start/env'
+// import { bus } from '@ifullgaz/adonis-websocket/transports/bus'
+
+export default {
+  bus: {
+//    factory: bus()
+    enabled: env.get('WEBSOCKET_ENABLED', false),
+    channel: env.get('WEBSOCKET_CHANNEL', 'websocket:broadcast')
+  }
+}

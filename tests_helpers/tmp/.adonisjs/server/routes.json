@@ -1,0 +1,1 @@
+{"root":[{"domain":"root","pattern":"/ws/:channel","matchers":{},"tokens":[{"old":"/ws/:channel","type":0,"val":"ws","end":""},{"old":"/ws/:channel","type":1,"val":"channel","end":""}],"meta":{"params":["channel"]},"methods":["GET","HEAD"],"middleware":{}}]}

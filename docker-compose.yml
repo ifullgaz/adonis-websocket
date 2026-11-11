@@ -1,0 +1,14 @@
+services:
+  adonis-websocket:
+    image: adonis-websocket
+    build:
+      context: .
+      dockerfile: ./docker/nodejs/Dockerfile
+      args:
+        CODE_PATH_HOST: ${CODE_PATH_HOST:-.}
+        CODE_PATH_CONTAINER: ${CODE_PATH_CONTAINER:-/app}
+    restart: always
+    environment:
+      NODE_AUTH_TOKEN: ${PERSONAL_ACCESS_TOKEN}
+    volumes:
+      - ${CODE_PATH_HOST:-.}:${CODE_PATH_CONTAINER:-/app}
