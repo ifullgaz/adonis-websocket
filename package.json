@@ -1,7 +1,7 @@
 {
   "name": "@ifullgaz/adonis-websocket",
   "description": "AdonisJS package for WebSocket with built-in support for optional AdonisJS Bus",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "engines": {
     "node": ">=24.0.0"
   },
